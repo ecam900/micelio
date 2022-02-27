@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import Layout from '../components/Layout';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// GSAP Plugins
+if (typeof window !== undefined) {
+  gsap.registerPlugin(ScrollTrigger);
 }
 
-export default MyApp
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
+}
+
+export default MyApp;
