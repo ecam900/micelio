@@ -6,11 +6,17 @@ const Bg = () => {
 
   useEffect(() => {
     const anim = gsap
-      .timeline({ scrollTrigger: { scroller: '#mainscroll', scrub: 2 } })
+      .timeline({
+        scrollTrigger: {
+          scroller: '#mainscroll',
+          scrub: 2,
+          trigger: '#scroll_top_sentry',
+        },
+      })
       .fromTo(
         el.current,
         { y: 0, x: '50%', scale: 3 },
-        { x: 0, y: '50%', scale: 5, rotate: 40 }
+        { x: 0, y: '100%', scale: 5, rotate: 40 }
       );
 
     return () => {
@@ -21,7 +27,7 @@ const Bg = () => {
   return (
     <div
       ref={el}
-      className='fixed inset-0 h-screen w-screen scale-[300%] -z-20 opacity-10'
+      className='fixed inset-0 h-screen w-screen scale-[300%] -z-20 opacity-30 overflow-hidden'
     >
       <svg width='100%' height='100%' viewBox='0 0 1511 1415' fill='none'>
         <path
