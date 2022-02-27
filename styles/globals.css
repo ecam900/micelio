@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-primary-main: 55, 55, 55;
+    --color-text-primary-muted: 106, 106, 106;
+    --color-text-primary-inverted: 255, 255, 255;
+    --color-primary: 59, 141, 143;
+    --color-secondary: 240, 130, 5;
+    --color-accent: 176, 0, 0;
+    --color-background-main: 253, 248, 242;
+    --theme-primary: #2c9c90;
+    --theme-secondary: #f08205;
+    --theme-accent: #b00000;
+  }
+}

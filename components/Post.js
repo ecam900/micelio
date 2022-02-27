@@ -82,12 +82,12 @@ const Synopsis = ({ text }) => {
       </div>
 
       <div
-        className='p-2 m-2  rounded text-[#945475] text flex items-center'
+        className='p-2 m-2  rounded text-[#945475] text flex items-center hover:cursor-pointer'
         onClick={() => setOpen(!open)}
       >
         {open ? (
           <>
-            <BsArrowsCollapse />
+            <BsArrowsCollapse className='mr-2' />
             <p>Cerrar</p>
           </>
         ) : (
