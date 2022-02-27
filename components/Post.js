@@ -97,11 +97,11 @@ const Synopsis = ({ text }) => {
 
 const Tags = ({ tags }) => {
   return (
-    <div className='m-2 flex'>
+    <div className='m-2 flex flex-wrap'>
       {tags &&
         tags.map((tag, i) => (
           <div key={`tag_${i}`} className='bg-[#dcca4e] rounded-full px-3 py-2 mx-1 my-2'>
-            <p className='text-sm text-black'>{tag}</p>
+            <p className='text-sm text-black whitespace-nowrap'>{tag}</p>
           </div>
         ))}
     </div>
