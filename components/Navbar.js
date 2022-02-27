@@ -19,7 +19,30 @@ const Navbar = () => {
               scrub: 1,
             },
           })
+          .add(gsap.to(imgRef.current, { height: '8rem' }));
+        return () => {
+          anim.kill();
+        };
+      },
+      // medium
+      '(min-width: 600px) and (max-width: 959px)': function () {
+        // The ScrollTriggers created inside these functions are segregated and get
+        // reverted/killed when the media query doesn't match anymore.
+        const anim = gsap
+          .timeline({
+            scrollTrigger: {
+              scroller: '#mainscroll',
+              trigger: '#scroll_top_sentry',
+              start: 'top top',
+              end: '+=500',
+              scrub: 1,
+            },
+          })
           .add(gsap.to(imgRef.current, { height: '6rem' }));
+
+        return () => {
+          anim.kill();
+        };
       },
 
       // small
@@ -28,12 +51,16 @@ const Navbar = () => {
           .timeline({
             scrollTrigger: {
               scroller: '#mainscroll',
+              trigger: '#scroll_top_sentry',
               start: 'top top',
               end: '+=500',
               scrub: 1,
             },
           })
           .add(gsap.to(imgRef.current, { height: '4rem' }));
+        return () => {
+          anim.kill();
+        };
       },
     });
 
@@ -48,7 +75,7 @@ const Navbar = () => {
         <div className='w-44 h-44 relative  flex justify-end' ref={imgRef}>
           {/* eslint-disable-next-line */}
           <img
-            className='h-full'
+            className='h-full rounded-bl-lg rounded-tl-lg lg:rounded-lg shadow-md'
             src='/micelio_logo.png'
             alt='el logo del micelio abolicionista'
           />
