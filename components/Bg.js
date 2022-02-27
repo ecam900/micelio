@@ -21,7 +21,7 @@ const Bg = () => {
   return (
     <div
       ref={el}
-      className='fixed inset-0 h-screen w-screen scale-[300%] -z-20 opacity-20'
+      className='fixed inset-0 h-screen w-screen scale-[300%] -z-20 opacity-10'
     >
       <svg width='100%' height='100%' viewBox='0 0 1511 1415' fill='none'>
         <path
