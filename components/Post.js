@@ -3,24 +3,6 @@ import { gsap } from 'gsap';
 import { BsPersonBadge, BsLink45Deg } from 'react-icons/bs';
 import { GiMagnifyingGlass } from 'react-icons/gi';
 
-const placeholderData = {
-  titulo: 'Zine: Glosario Abolicionista',
-  autores: ['Micelio Abolicionista'],
-  links: [
-    {
-      nombre: 'Versión para imprimir (pdf)',
-      link: 'https://drive.google.com/file/d/1VcoaIhOqbvn7iQuXFekSSwp7QNLfe_PD/view?usp=sharing',
-    },
-    {
-      nombre: 'Video del Zine',
-      link: 'https://drive.google.com/file/d/1IUE1WGseiXIMJpH3msZRMeLBnJdN0Znv/view?usp=sharing',
-    },
-  ],
-  tags: ['zine', 'español', 'abolicionismo'],
-  sinopsis:
-    '[ZINE, español] A tu izquierda encontrarás dos enlaces con las opciones disponibles para acceder al primer Zine del Micelio Abolicionista: Glosario Abolicionista. En el primer enlace tienes la opción de visitar el video donde hacemos lectura del Zine mientras grabamos la opción impresa que te aparece en el segundo enlace en caso de que intereses imprimir para leer y/o compartir con tus comunidades. También encontrarás el QR Code que te lleva al tablero en la cajita de abajo donde podrás responder la pregunta: ¿Qué significa JUSTICIA para ti? En este primer Zine se encuentran definidos conceptos básicos ya estudiados y practicados por varies abolicionistas del Complejo Industrial Carcelario, maestres, estudiantes, colectives y comunidades con el propósito de reflexionar, practicar y proponer alternativas para atender los conflictos desde una perspectiva abolicionista. Estas definiciones son pensadas por Micelio Abolicionista en procesos de aprendizaje colectivo, al momento son generales y están abiertas a ampliarse, profundizar y transformar. ',
-};
-
 const Post = ({ data = placeholderData }) => {
   return (
     <div className='flex flex-col shadow-md rounded-lg p-8 md:text-lg'>
@@ -98,7 +80,7 @@ const Synopsis = ({ text }) => {
       </div>
 
       <button
-        className='p-2 bg-teal-700 rounded text-white font-bold'
+        className='p-2 m-2 bg-teal-700 rounded text-white font-bold'
         onClick={() => setOpen(!open)}
       >
         <p>Abrir Sinopsis</p>
