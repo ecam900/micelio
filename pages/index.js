@@ -28,7 +28,7 @@ export default function Home() {
       <p className='text md:text-lg pt-4'>
         Para proponer otros recursos, comunicar dudas y/o compartirnos cómo te fue usando
         este recurso, te puedes comunicar a{' '}
-        <span className='text-[#3B8D8F]'>micelioabolicionista@gmail.com</span>
+        <span className='text-[#3B8D8F] font-bold'>micelioabolicionista@gmail.com</span>
       </p>
 
       <div className='container my-4'>

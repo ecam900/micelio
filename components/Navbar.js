@@ -70,7 +70,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='fixed top-0 left-0 w-full flex justify-center'>
+    <div className='fixed top-0 left-0 z-50 w-full flex justify-center'>
       <div className='container flex justify-end'>
         <div className='w-44 h-44 relative  flex justify-end' ref={imgRef}>
           {/* eslint-disable-next-line */}
