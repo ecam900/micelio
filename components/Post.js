@@ -100,8 +100,11 @@ const Tags = ({ tags }) => {
     <div className='m-2 flex flex-wrap'>
       {tags &&
         tags.map((tag, i) => (
-          <div key={`tag_${i}`} className='bg-[#945475] rounded-full px-3 py-2 mx-1 my-2'>
-            <p className='text-sm text-white whitespace-nowrap'>{tag}</p>
+          <div
+            key={`tag_${i}`}
+            className='bg-stone-200 opacity-100 rounded-full px-3 py-2 mx-1 my-2'
+          >
+            <p className='text-sm text-stone-800 whitespace-nowrap'>{tag}</p>
           </div>
         ))}
     </div>
