@@ -4,6 +4,7 @@ import recursos from '../recursos';
 export default function Home() {
   return (
     <div className='container pt-48 p-4'>
+      <div id='scroll_top_sentry' />
       {/* INTRO */}
       <p className='text-3xl pb-2 font-bold md:text-4xl'>Guia Micelio Abolicionista</p>
       <p className='text text-slate-600 pb-8'>Septiembre 2021</p>

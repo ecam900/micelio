@@ -5,7 +5,7 @@ import { GiMagnifyingGlass } from 'react-icons/gi';
 
 const Post = ({ data = placeholderData }) => {
   return (
-    <div className='flex flex-col shadow-md rounded-lg p-8 md:text-lg'>
+    <div className='flex flex-col shadow-md my-8 bg-stone-50 rounded-lg p-8 md:text-lg'>
       <p className='text-slate-800 font-bold pb-2 text-2xl md:text-3xl'>{data.titulo}</p>
 
       <div className='flex flex-col lg:flex-row'>
@@ -100,8 +100,8 @@ const Tags = ({ tags }) => {
     <div className='m-2 flex flex-wrap'>
       {tags &&
         tags.map((tag, i) => (
-          <div key={`tag_${i}`} className='bg-[#dcca4e] rounded-full px-3 py-2 mx-1 my-2'>
-            <p className='text-sm text-black whitespace-nowrap'>{tag}</p>
+          <div key={`tag_${i}`} className='bg-[#945475] rounded-full px-3 py-2 mx-1 my-2'>
+            <p className='text-sm text-white whitespace-nowrap'>{tag}</p>
           </div>
         ))}
     </div>

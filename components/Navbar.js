@@ -14,6 +14,7 @@ const Navbar = () => {
             scrollTrigger: {
               scroller: '#mainscroll',
               start: 'top top',
+              trigger: '#scroll_top_sentry',
               end: '+=500',
               scrub: 1,
             },
@@ -43,8 +44,8 @@ const Navbar = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full flex justify-center'>
-      <div className='container'>
-        <div className='w-44 h-44 relative' ref={imgRef}>
+      <div className='container flex justify-end'>
+        <div className='w-44 h-44 relative  flex justify-end' ref={imgRef}>
           {/* eslint-disable-next-line */}
           <img
             className='h-full'

@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useIsomorphicLayoutEffect from '../hooks/useIsomorphicLayoutEffect';
 import Navbar from './Navbar';
+import Bg from './Bg';
 
 export const ScrollContext = createContext();
 
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </ScrollContext.Provider>
       {children}
+      <Bg />
     </div>
   );
 };
